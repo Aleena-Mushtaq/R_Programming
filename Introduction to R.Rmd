@@ -1,7 +1,7 @@
 ---
 title: "Introduction to R Programming"
-author: "Sana Rasheed"
-date: "May 14, 2020"
+author: "Aleena Mushtaq"
+date: "June 14, 2021"
 output: html_document
 ---
 
@@ -24,32 +24,28 @@ output: html_document
 
 ```{r }
 #### Start solution ####
-```
+#   Answers #
+#Ans.of Question no.1.1 and 1.2
+x <- c("A","L","E","E","N","A", "M","U","S","H","T","A","Q")
+x
+# Ans. 1.3
+x <- c(100:120)
+x
+# Ans. 1.4
+m <- matrix (2:10, nrow = 3, ncol = 3)
+m
+dim(m)
+attributes(m)
+# Ans. 1.5
+m <- seq(2:10)
+m
+dim(m) <- c(3,3)
+m
+# I couldn't find the code for making sequence of all even numbers.
 
-
-```{r }
-
-```
-
-
-```{r }
-
-```
-
-
-```{r }
-
-```
-
-
-```{r }
-
-```
-
-
-```{r }
 #### End solution ####
 ```
+
 
 ### Question 2
 **Create a factor variable emp_status:**  
@@ -64,13 +60,15 @@ output: html_document
 
 
 ```{r }
+x <- factor(c("Employed", "unemployed", "self-employed"))
+x
+# Ans. 2
+table(x)
+unclass(x)
 
-```
 
 
-```{r }
 
-```
 
 
 ```{r }
@@ -96,6 +94,14 @@ output: html_document
 
 
 ```{r }
+##Data Frame Object:
+# Title: bank_customers
+bank_customers <- data.frame (1:5) 
+                Value <- c(NA, 10000, 100, 2000, NA )
+                customer_names <- c("Alicia", "Nancy", "Fernando", "Louis","Diane")
+colnames <-`c("CustomerID", "hasAccount", "totalBalance")
+df <- data.frame(colnames, customer_Names, Value)
+names(bank_customers)
 #### Start solution ####
 ```
 
